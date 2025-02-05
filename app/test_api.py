@@ -18,20 +18,13 @@ def test_prediction(image_path):
 
 def create_test_image():
     """Create a test image (digit 5) for testing."""
-    # Create a 28x28 black image
     img = np.zeros((28, 28), dtype=np.uint8)
     
     # Draw a simple "5"
-    img[5:20, 5:20] = 255  # Draw a white rectangle
+    img[5:20, 5:20] = 255  
     
-    # Save the image
     image = Image.fromarray(img)
     image.save("test_digit.png")
-    
-    # Display the image
-    plt.imshow(img, cmap='gray')
-    plt.title("Test Digit Image")
-    plt.show()
     
     return "test_digit.png"
 
