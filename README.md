@@ -6,6 +6,16 @@ This project's main goal is to deploy a basic digit recognizer (I recently solve
 
 The following metrics were obtained by running 100 consecutive prediction requests on the containerized API:
 
+### Test Configuration
+- **Total Requests**: 100 consecutive API calls
+- **Test Environment**: Docker container running on local machine
+- **Input**: 28x28 grayscale test image
+- **Operation**: Full prediction pipeline including:
+  - Image upload
+  - Preprocessing (normalization, reshaping)
+  - Model inference
+  - Response generation
+
 ### Latency Statistics
 | Metric | Value (milliseconds) | Description |
 |--------|---------------------|-------------|
@@ -19,3 +29,10 @@ The following metrics were obtained by running 100 consecutive prediction reques
 - **Predictability**: 95% of requests complete within 43.63ms, showing highly consistent response times.
 - **Worst-case Performance**: Even in the worst 1% of cases (99th percentile), latency remains under 53ms.
 - **Production Readiness**: These metrics demonstrate the system's capability to handle real-time prediction requests with reliable response times.
+
+### Visualization
+A latency distribution plot (`latency_distribution.png`) is automatically generated during testing, showing:
+- Histogram of response times
+- Median latency (red dashed line)
+- Mean latency (green dashed line)
+This visualization helps identify any performance patterns or anomalies in the system.
