@@ -26,7 +26,7 @@ The following metrics were obtained by running 100 consecutive prediction reques
 
 ### Analysis
 - **Consistency**: The small gap between median (40.54ms) and average (42.33ms) indicates very stable performance with few outliers.
-- **Predictability**: 95% of requests complete within 43.63ms, showing highly consistent response times.
+- **Predictability**: 95% of requests complete within 43.62ms, showing highly consistent response times.
 - **Worst-case Performance**: Even in the worst 1% of cases (99th percentile), latency remains under 53ms.
 - **Production Readiness**: These metrics demonstrate the system's capability to handle real-time prediction requests with reliable response times.
 
