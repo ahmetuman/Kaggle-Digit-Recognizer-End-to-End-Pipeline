@@ -81,7 +81,6 @@ def ensure_model_loaded():
                     tf.keras.layers.Dense(10, activation='softmax')
                 ])
                 
-                # Load the weights
                 model.load_weights(model_path)
                 logger.info("Model loaded successfully!")
             except Exception as e:
@@ -106,7 +105,6 @@ def preprocess_image(image_bytes):
         numpy array: Preprocessed image ready for model input
     """
     try:
-        # Open image using PIL
         image = Image.open(io.BytesIO(image_bytes))
         
         # Convert to grayscale

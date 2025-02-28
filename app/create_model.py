@@ -31,7 +31,6 @@ def save_model(model, output_path):
     print(f"Model weights saved to: {output_path}")
 
 if __name__ == "__main__":
-    # Create the model
     model = create_mnist_model()
     
     # Get the model path
