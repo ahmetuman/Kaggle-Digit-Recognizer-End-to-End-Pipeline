@@ -1,6 +1,6 @@
 # Kaggle-Digit-Recognizer-End-to-End-Pipeline
 
-This project's main goal is to deploy a basic digit recognizer (I recently solved in Kaggle) using FastAPI. The most important part of this project is to deploy it in a containerized environment.
+This project's main goal is to deploy a basic digit recognizer (I recently [solved](https://github.com/ahmetuman/Kaggle-Competitions/blob/main/digit-recognizer.ipynb) in Kaggle) using FastAPI. The most important part of this project is to deploy it in a containerized environment.
 
 ## Performance Metrics (Dockerized API)
 
